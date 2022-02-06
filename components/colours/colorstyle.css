@@ -1,0 +1,267 @@
+:root {
+	--white: #f5f5f5;
+	--primary: #1d4552;
+	--secondary: #bdd4db;
+	--accent: #ff875c;
+	--black: #353535;
+	--danger: #ef4444;
+	--danger-light: #f8d7dd;
+	--danger-dark: #b11919;
+	--warning: #f8af42;
+	--warning-light: #fdefbf;
+	--warning-dark: #e9910e;
+	--success: #2dc653;
+	--success-light: #d1e7dd;
+	--success-dark: #037c21;
+	--grey: #9c9c9c;
+	--grey-light: #dbdbdb;
+	--grey-dark: #5a5a5a;
+	--tealgreen: #5aa286;
+	--tealgreen-dark: #1c8059;
+	--tealgreen-light: #aad1c2;
+}
+
+.bg-primary {
+	color: var(--white);
+	background-color: var(--primary);
+}
+
+.bg-secondary {
+	background-color: var(--secondary);
+}
+
+.bg-accent {
+	background-color: var(--accent);
+}
+
+.bg-danger {
+	color: var(--white);
+	background-color: var(--danger);
+}
+
+.bg-danger-light {
+	background-color: var(--danger-light);
+}
+
+.bg-danger-dark {
+	color: var(--white);
+	background-color: var(--danger-dark);
+}
+
+.bg-success {
+	background-color: var(--success);
+}
+
+.bg-success-light {
+	background-color: var(--success-light);
+}
+
+.bg-success-dark {
+	color: var(--white);
+	background-color: var(--success-dark);
+}
+
+.bg-warning {
+	background-color: var(--warning);
+}
+
+.bg-warning-dark {
+	background-color: var(--warning-dark);
+}
+
+.bg-warning-light {
+	background-color: var(--warning-light);
+}
+
+.bg-grey {
+	background-color: var(--grey);
+}
+
+.bg-grey-dark {
+	color: var(--white);
+	background-color: var(--grey-dark);
+}
+
+.bg-grey-light {
+	background-color: var(--grey-light);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-black {
+	background-color: var(--black);
+}
+
+.bg-tealgreen {
+	background-color: var(--tealgreen);
+}
+
+.bg-tealgreen-dark {
+	background-color: var(--tealgreen-dark);
+}
+
+.bg-tealgreen-light {
+	background-color: var(--tealgreen-light);
+}
+
+.color-white {
+	color: var(--white);
+}
+
+.color-black {
+	color: var(--black);
+}
+
+.color-primary {
+	color: var(--primary);
+}
+
+.color-secondary {
+	color: var(--secondary);
+}
+
+.color-accent {
+	color: var(--accent);
+}
+
+.color-danger {
+	color: var(--danger);
+}
+
+.color-danger-light {
+	color: var(--danger-light);
+}
+
+.color-danger-dark {
+	color: var(--danger-dark);
+}
+
+.color-success {
+	color: var(--success);
+}
+
+.color-success-light {
+	color: var(--success-light);
+}
+
+.color-success-dark {
+	color: var(--success-dark);
+}
+
+.color-warning {
+	color: var(--warning);
+}
+
+.color-warning-dark {
+	color: var(--warning-dark);
+}
+
+.color-warning-light {
+	color: var(--warning-light);
+}
+
+.color-tealgreen {
+	color: var(--tealgreen);
+}
+
+.color-tealgreen-dark {
+	color: var(--tealgreen-dark);
+}
+
+.color-tealgreen-light {
+	color: var(--tealgreen-lightopacity);
+}
+
+.color-grey {
+	color: var(--grey);
+}
+
+.color-grey-dark {
+	color: var(--grey-dark);
+}
+
+.color-grey-light {
+	color: var(--grey-light);
+}
+
+.border-primary {
+	border: 2px solid var(--primary);
+}
+
+.border-secondary {
+	border: 2px solid var(--secondary);
+}
+
+.border-accent {
+	border: 2px solid var(--accent);
+}
+
+.border-white {
+	border: 2px solid var(--white);
+}
+
+.border-black {
+	border: 2px solid var(--black);
+}
+
+.border-success {
+	border: 2px solid var(--success);
+}
+
+.border-success-dark {
+	border: 2px solid var(--success-dark);
+}
+
+.border-success-light {
+	border: 2px solid var(--success-light);
+}
+
+.border-danger {
+	border: 2px solid var(--danger);
+}
+
+.border-danger-dark {
+	border: 2px solid var(--danger-dark);
+}
+
+.border-danger-light {
+	border: 2px solid var(--danger-light);
+}
+
+.border-warning {
+	border: 2px solid var(--warning);
+}
+
+.border-warning-dark {
+	border: 2px solid var(--warning-dark);
+}
+
+.border-warning-light {
+	border: 2px solid var(--warning-light);
+}
+
+.border-grey {
+	border: 2px solid var(--grey);
+}
+
+.border-grey-dark {
+	border: 2px solid var(--grey-dark);
+}
+
+.border-grey-light {
+	border: 2px solid var(--grey-light);
+}
+
+.border-tealgreen {
+	border: 2px solid var(--tealgreen);
+}
+
+.border-tealgreen-dark {
+	border: 2px solid var(--tealgreen-dark);
+}
+
+.border-tealgreen-light {
+	border: 2px solid var(--tealgreen-light);
+}

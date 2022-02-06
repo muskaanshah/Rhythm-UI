@@ -1,0 +1,88 @@
+@import url(../Utilities/utilities.css);
+@import url(../Utilities/colorstyle.css);
+
+.btn {
+	padding: 0.7rem 1rem;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: var(--black);
+	font-weight: 400;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	border: none;
+}
+
+.color-white {
+	color: var(--white);
+}
+
+.btn.bg-primary:hover {
+	background-color: rgb(41, 92, 109);
+}
+
+.btn.bg-secondary:hover {
+	background-color: rgb(161, 191, 201);
+}
+
+.btn.bg-accent:hover,
+.btn.bg-success:hover,
+.btn.bg-danger:hover {
+	filter: brightness(96%);
+}
+
+.btn-disabled {
+	cursor: not-allowed;
+	color: white;
+	background-color: var(--grey);
+}
+
+.btn-primary-outline {
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.btn-accent-outline {
+	color: var(--accent);
+	border: 2px solid var(--accent);
+}
+
+.btn-primary-outline:hover {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.btn-accent-outline:hover {
+	background-color: var(--accent);
+	color: var(--black);
+}
+
+.btn-link-primary {
+	color: var(--primary);
+	text-decoration: underline;
+	font-weight: 500;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.btn-link-primary:hover {
+	border: 2px solid var(--primary);
+}
+
+.btn-lg {
+	padding: 1rem 1.4rem;
+	font-size: 1.4rem;
+}
+
+.btn-sm {
+	padding: 0.5rem 0.8rem;
+	font-size: 0.8rem;
+}
+
+.btn-icon {
+	border-radius: 50%;
+	padding: 0.8rem;
+}

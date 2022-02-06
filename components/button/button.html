@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Button</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link active">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Buttons</h2>
+				<p class="blocktext">
+					Buttons are used in almost every website in forms, toolbars,
+					homepages, dialog boxes. If the user has to do an action or submit
+					data to the server, a button is used to initiate the action.
+				</p>
+				<h3>General buttons</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">btn</code> - The main class; has to be
+						used when the user wants a button; to be given for all variation of
+						buttons; can be styled with other classes to give other effects; has
+						to be given to the button / anchor tag
+					</p>
+					<p>
+						<code class="code-highlight">btn-disabled</code> - Optional; to be
+						used when the user shoudn't be allowed to click on a button
+					</p>
+					<p>
+						<code class="code-highlight">btn-lg</code> - Optional; to be used
+						when a larger button is required
+					</p>
+					<p>
+						<code class="code-highlight">btn-sm</code> - Optional; to be used
+						when a smaller button is required
+					</p>
+				</div>
+
+				<div class="centered blocktext">
+					<a href="#" class="btn bg-primary color-white">PRIMARY</a>
+					<a href="#" class="btn bg-accent borderradius-2">ACCENT</a>
+					<a href="#" class="btn btn-disabled borderradius-1" disabled>
+						DISABLED</a
+					>
+					<a
+						href="#"
+						class="btn btn-lg bg-primary color-white btn-lg borderradius-2"
+						>LARGE</a
+					>
+					<a href="#" class="btn btn-sm bg-secondary borderradius-2">SMALL</a>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;a href="#" class="btn bg-primary color-white"&gt;PRIMARY&lt;/a&gt;
+&lt;a href="#" class="btn bg-accent borderradius-2"&gt;ACCENT&lt;/a&gt;
+&lt;a href="#" class="btn btn-disabled borderradius-1"&gt;DISABLED&lt;/a&gt;
+&lt;a href="#" class="btn btn-lg bg-primary color-white btn-lg borderradius-2"&gt;LARGE&lt;/a&gt;
+&lt;a href="#" class="btn btn-sm bg-secondary borderradius-2"&gt;SMALL&lt;/a&gt;
+                </code></pre>
+				<h3>Outlined buttons</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">btn-primary-outline</code> - to be used
+						when user wants a button with the primary shade as the border
+					</p>
+					<p>
+						<code class="code-highlight">btn-accent-outline</code> - to be used
+						when user wants a button with the accent shade as the border
+					</p>
+				</div>
+				<p class="blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> For
+					the primary shade and accent shade alone there is an inbuilt class,
+					for the other shades, you can used the border and color property to
+					style the button as per your need
+				</p>
+
+				<div class="centered blocktext">
+					<a href="#" class="btn btn-primary-outline borderradius-2">PRIMARY</a>
+					<a href="#" class="btn btn-accent-outline borderradius-2">ACCENT</a>
+					<a
+						href="#"
+						class="border-success-dark color-success-dark borderradius-2 text-none py-0-5 px-1"
+						>CUSTOMISED</a
+					>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;a href="#" class="btn btn-primary-outline borderradius-2"&gt;PRIMARY&lt;/a&gt;
+&lt;a href="#" class="btn btn-accent-outline borderradius-2"&gt;ACCENT&lt;/a&gt;
+&lt;a href="#" class="border-success-dark color-success-dark borderradius-2 text-none py-0-5 px-1"&gt; CUSTOMISED&lt;/a&gt;
+                </code></pre>
+				<h3>Buttons with icon</h3>
+				<p class="blocktext">
+					The same classes as mentioned above can be used for styling a button
+					with an icon.
+				</p>
+				<div class="centered blocktext">
+					<a href="#" class="btn bg-primary color-white">
+						<span class="material-icons"> shopping_cart </span>
+						ADD TO CART
+					</a>
+					<a href="#" class="btn bg-danger color-white">
+						<span class="material-icons"> delete </span>
+						DELETE
+					</a>
+					<a href="#" class="btn bg-secondary">
+						SEND
+						<span class="material-icons"> send </span>
+					</a>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;a href="#" class="btn bg-primary color-white"&gt;
+    &lt;span class="material-icons"&gt; shopping_cart &lt;/span&gt;
+    ADD TO CART
+&lt;/a&gt;
+&lt;a href="#" class="btn bg-danger color-white"&gt;
+    &lt;span class="material-icons"&gt; delete &lt;/span&gt;
+    DELETE
+&lt;/a&gt;
+&lt;a href="#" class="btn bg-secondary"&gt;
+    SEND
+    &lt;span class="material-icons"&gt; send &lt;/span&gt;
+&lt;/a&gt;
+                </code></pre>
+				<h3>Floating buttons</h3>
+				<p class="blocktext">
+					These are buttons which just have an icon and can be fixed to the page
+					according to the user's need. The same classes as mentioned above can
+					be used for styling this type of button.
+				</p>
+				<div class="centered blocktext">
+					<a href="#" class="btn bg-primary color-white btn-icon">
+						<span class="material-icons"> add </span>
+					</a>
+					<a href="#" class="btn bg-accent btn-icon">
+						<span class="material-icons"> search </span>
+					</a>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;a href="#" class="btn bg-primary color-white btn-icon"&gt;
+    &lt;span class="material-icons"&gt; add &lt;/span&gt;
+&lt;/a&gt;
+&lt;a href="#" class="btn bg-accent btn-icon"&gt;
+    &lt;span class="material-icons"&gt; search &lt;/span&gt;
+&lt;/a&gt;
+                </code></pre>
+
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../badge/badge.html">Badge</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../card/cards.html">Card</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

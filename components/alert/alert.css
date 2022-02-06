@@ -1,0 +1,36 @@
+@import url(../utilities.css);
+@import url(../colorstyle.css);
+
+.alert {
+	background-color: var(--grey-light);
+	color: var(--grey-dark);
+	font-weight: 400;
+	padding: 0.7rem 1rem;
+	width: clamp(250px, 50%, 600px);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border: 1px solid var(--grey-dark);
+	border-left: 0.5rem solid var(--grey-dark);
+}
+
+.alert-warning {
+	background-color: var(--warning-light);
+	color: var(--warning-dark);
+	border: 1px solid var(--warning-dark);
+	border-left: 0.5rem solid var(--warning-dark);
+}
+
+.alert-success {
+	background-color: var(--success-light);
+	color: var(--success-dark);
+	border: 1px solid var(--success-dark);
+	border-left: 0.5rem solid var(--success-dark);
+}
+
+.alert-error {
+	background-color: var(--danger-light);
+	color: var(--danger-dark);
+	border: 1px solid var(--danger-dark);
+	border-left: 0.5rem solid var(--danger-dark);
+}

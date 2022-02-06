@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Card</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link active">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Cards</h2>
+				<p class="blocktext">
+					Cards are a convenient means of displaying content composed of
+					different types of objects. They are also well-suited for presenting
+					similar objects whose size or supported actions can vary considerably,
+					like photos with captions of variable length.
+				</p>
+				<h3>Card with text alone</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card</code> - The main class; has to be
+						used when the user wants to display a card; to be given for all
+						variation of cards; can be styled with other classes to give other
+						effects; has to be given to the parent div
+					</p>
+					<p>
+						<code class="code-highlight">card-title</code> - Optional; to be
+						used when a title needs to be given
+					</p>
+					<p>
+						<code class="code-highlight">card-content</code> - Optional; to be
+						used when a large chunk of text has to be given
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card">
+						<h3 class="card-title">Catan</h3>
+						<p class="card-content">
+							Catan, is a multiplayer board game where players take on the roles
+							of settlers, each attempting to build and develop holdings while
+							trading and acquiring land and resources.
+						</p>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card"&gt;
+    &lt;h3 class="card-title"&gt;Catan&lt;/h3&gt;
+    &lt;p class="card-content"&gt; *content* &lt;/p&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Card with dismissible icon</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-close</code> - Optional; it's used
+						with an icon which closes the card; needs to be given when the card
+						should be dismissible
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card boxshadow-medium">
+						<button class="card-close">
+							<span class="material-icons"> close </span>
+						</button>
+						<h3 class="card-title">Ticket to Ride</h3>
+						<p class="card-content">
+							Ticket to Ride is a cross-country train adventure where players
+							collect cards of various types of train cars that enable them to
+							claim railway routes connecting cities in various countries around
+							the world.
+						</p>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card boxshadow-medium"&gt;
+    &lt;button class="card-close"&gt;
+        &lt;span class="material-icons"&gt; close &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;h3 class="card-title"&gt;Ticket to Ride&lt;/h3&gt;
+    &lt;p class="card-content"&gt; *content* &lt;/p&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Card with image</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-image-wrapper</code> - Has to be
+						given to the wrapper div which has the image; this wrapper div is
+						exclusively for the image tag only and it is advised not to give any
+						other elements in this wrapper div
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card card-image">
+						<div class="card-image-wrapper">
+							<img
+								class="img-responsive"
+								src="https://m.media-amazon.com/images/I/8127PSclV9S._SL1500_.jpg"
+							/>
+						</div>
+						<h3 class="card-title">Splendor</h3>
+						<p class="card-content">
+							Splendor is a game of chip-collecting and card development.
+							Players are merchants trying to buy gems, transportation, shops -
+							all in order to acquire the most prestige points.
+						</p>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card card-image"&gt;
+    &lt;div class="card-image-wrapper"&gt;
+        &lt;img
+            class="img-responsive"
+            src="https://m.media-amazon.com/images/I/8127PSclV9S._SL1500_.jpg"
+        /&gt;
+    &lt;/div&gt;
+    &lt;h3 class="card-title"&gt;Splendor&lt;/h3&gt;
+    &lt;p class="card-content"&gt; *content* &lt;/p&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Social media card</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-header</code> - Has to be given to
+						the wrapper div which has the avatar and the user name
+					</p>
+					<p>
+						<code class="code-highlight">card-header-text</code> - Has to be
+						given to the tag which has the user name
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card">
+						<div class="card-header">
+							<img
+								class="avatar avatar-sm borderradius-full"
+								src="https://i.ibb.co/Q64Rqtg/Shakti-Mohan-Pictures-641x1024.jpg"
+								alt="avatar image"
+							/>
+							<p class="card-header-text">Shakti Mohan</p>
+						</div>
+						<div class="card-image-wrapper">
+							<img
+								class="img-responsive"
+								src="https://miro.medium.com/max/1400/1*AS9RB7wn_lsZFLJbQIm16w.png"
+							/>
+						</div>
+						<p class="card-content">
+							A day spent well with two things I love the most - playing board
+							games, playing them with kids
+						</p>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;img
+            class="avatar avatar-sm borderradius-full"
+            src="https://i.ibb.co/Q64Rqtg/Shakti-Mohan-Pictures-641x1024.jpg"
+            alt="avatar image"
+        /&gt;
+        &lt;p class="card-header-text"&gt;Shakti Mohan&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-image-wrapper"&gt;
+        &lt;img
+            class="img-responsive"
+            src="https://miro.medium.com/max/1400/1*AS9RB7wn_lsZFLJbQIm16w.png"
+        /&gt;
+    &lt;/div&gt;
+    &lt;p class="card-content"&gt; *content* &lt;/p&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Product card</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-product</code> - Has to be given
+						to use the product card
+					</p>
+					<p>
+						<code class="code-highlight">card-product-details</code> - This is a
+						wrapper div which has all the details of the product
+					</p>
+					<p>
+						<code class="code-highlight">card-product-favourite</code> -
+						Optional; this is a wrapper div which can be given when the wishlist
+						functionality is being used; this contains the favourite icon
+					</p>
+					<p>
+						<code class="code-highlight">card-product-description</code> -
+						Optional; this is given for a small 2-3 word description of the
+						product
+					</p>
+					<p>
+						<code class="code-highlight">card-product-price</code> - Optional;
+						this is a wrapper div which contains the pricing structure
+					</p>
+					<p>
+						<code class="code-highlight">card-product-newprice</code> -
+						Optional; this contains the new price of the product
+					</p>
+					<p>
+						<code class="code-highlight">card-product-actualprice</code> -
+						Optional; this contains the actual price of the product incase the
+						new price is different from the actual price; it has a striked
+						through value
+					</p>
+					<p>
+						<code class="code-highlight">card-product-discount</code> -
+						Optional; this contains the discount percentage if there is a
+						discount
+					</p>
+					<p>
+						<code class="code-highlight">card-button</code> - This is a wrapper
+						div which contains the add to cart button and the share button
+					</p>
+					<p>
+						<code class="code-highlight">card-button-share</code> - Optional;
+						this is a wrapper div which contains the share button
+					</p>
+					<p>
+						<code class="code-highlight">card-badge</code> - Optional; has to be
+						given to print the badge text on top of the image
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card card-product">
+						<div class="card-image-wrapper p-1">
+							<img
+								class="img-responsive"
+								src="https://m.media-amazon.com/images/I/71qDTSDIN0L._SY355_.jpg"
+							/>
+						</div>
+						<span class="card-badge bg-primary color-white">Top 10 picks</span>
+						<div class="card-product-details">
+							<button class="card-product-favourite">
+								<span class="material-icons"> favorite </span>
+							</button>
+							<h3 class="card-title">Codenames</h3>
+							<p class="card-product-description">Multiplayer witty game</p>
+							<div class="card-product-price">
+								<span class="card-product-newprice">Rs.799</span>
+								<span class="card-product-actualprice">Rs.1199</span>
+								<span class="card-product-discount">30% off</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="btn bg-accent ls-1 color-black fs-1">
+								ADD TO CART
+							</button>
+							<button class="card-button-share">
+								<span class="material-icons"> share </span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card card-product"&gt;
+    &lt;div class="card-image-wrapper p-1"&gt; /* p-1 to be given if padding needed around image */
+        &lt;img
+            class="img-responsive"
+            src="https://m.media-amazon.com/images/I/71qDTSDIN0L._SY355_.jpg"
+        /&gt;
+    &lt;/div&gt;
+    &lt;span class="card-badge bg-primary color-white"&gt;Top 10 picks&lt;/span&gt;
+    &lt;div class="card-product-details"&gt;
+        &lt;button class="card-product-favourite"&gt;
+            &lt;span class="material-icons"&gt; favorite &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;h3 class="card-title"&gt;Codenames&lt;/h3&gt;
+        &lt;p class="card-product-description"&gt;Multiplayer witty game&lt;/p&gt;
+        &lt;div class="card-product-price"&gt;
+            &lt;span class="card-product-newprice"&gt;Rs.799&lt;/span&gt;
+            &lt;span class="card-product-actualprice"&gt;Rs.1199&lt;/span&gt;
+            &lt;span class="card-product-discount"&gt;30% off&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-button"&gt;
+        &lt;button class="btn bg-accent ls-1 color-black fs-1"&gt;ADD TO CART&lt;/button&gt;
+        &lt;button class="card-button-share"&gt;
+            &lt;span class="material-icons"&gt; share &lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Overlay card</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-outofstock-overlay</code> - Gives
+						a full overlay on the card
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card card-product">
+						<div class="card-image-wrapper">
+							<img
+								class="img-responsive"
+								src="https://i.ebayimg.com/images/g/yf0AAOSwVjheTYSu/s-l640.jpg"
+							/>
+						</div>
+						<div class="card-product-details">
+							<button class="card-product-favourite">
+								<span class="material-icons"> favorite </span>
+							</button>
+							<h3 class="card-title">Tiki Topple</h3>
+							<p class="card-product-description">Fun light-heearted game</p>
+							<div class="card-product-price">
+								<span class="card-product-newprice">Rs.1299</span>
+								<span class="card-product-actualprice">Rs.1599</span>
+								<span class="card-product-discount">18% off</span>
+							</div>
+						</div>
+						<div class="card-button">
+							<button class="btn bg-accent ls-1 color-black fs-1">
+								ADD TO CART
+							</button>
+							<button class="card-button-share">
+								<span class="material-icons"> share </span>
+							</button>
+							<div class="card-outofstock-overlay">
+								<p class="bg-grey-light py-0-5 px-2">Out of stock ☹</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card card-product"&gt;
+    &lt;div class="card-image-wrapper"&gt;
+        &lt;img
+            class="img-responsive"
+            src="https://i.ebayimg.com/images/g/yf0AAOSwVjheTYSu/s-l640.jpg"
+        /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-product-details"&gt;
+        &lt;button class="card-product-favourite"&gt;
+            &lt;span class="material-icons"&gt; favorite &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;h3 class="card-title"&gt;Tiki Topple&lt;/h3&gt;
+        &lt;p class="card-product-description"&gt;Fun light-heearted game&lt;/p&gt;
+        &lt;div class="card-product-price"&gt;
+            &lt;span class="card-product-newprice"&gt;Rs.1299&lt;/span&gt;
+            &lt;span class="card-product-actualprice"&gt;Rs.1599&lt;/span&gt;
+            &lt;span class="card-product-discount"&gt;18% off&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-button"&gt;
+        &lt;button class="btn bg-accent ls-1 color-black fs-1"&gt;ADD TO CART&lt;/button&gt;
+        &lt;button class="card-button-share"&gt;
+            &lt;span class="material-icons"&gt; share &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class="card-outofstock-overlay"&gt;
+            &lt;p class="bg-grey-light py-0-5 px-2"&gt;Out of stock ☹&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Horizontal Card</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">card-horizontal</code> - Main class;
+						has to be given when the card needs to be horizontal; has limited
+						information; mostly used when the item is added to the cart
+					</p>
+					<p>
+						<code class="code-highlight">card-product-quantity</code> - It is
+						the wrapper div which holds the quantity when the item is in the
+						cart
+					</p>
+					<p>
+						<code class="code-highlight">product-qty</code> - Has the span tag
+						which contains the label
+					</p>
+					<p>
+						<code class="code-highlight">qty</code> - Has a dropdown menu for
+						the number of items; user can select the quantity using this
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="card-horizontal">
+						<div class="card-image-wrapper">
+							<img
+								class="img-responsive"
+								src="https://cf.geekdo-images.com/uiVZ7QVfRFQx3EBG8eDU8w__opengraph/img/XrCi7i4a7U0T5SORtna7w9QghYA=/fit-in/1200x630/filters:strip_icc()/pic6339446.png"
+							/>
+						</div>
+						<div class="card-product-details">
+							<button class="card-close">
+								<span class="material-icons"> close </span>
+							</button>
+							<h3 class="card-title">Hanamikoji</h3>
+							<p class="card-product-description">Based on set collection</p>
+							<div class="card-product-price">
+								<span class="card-product-newprice">Rs.1299</span>
+								<span class="card-product-actualprice">Rs.1599</span>
+								<span class="card-product-discount">18% off</span>
+							</div>
+							<div class="card-product-quantity">
+								<span class="product-qty">Qty:</span>
+								<select class="qty">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="card-horizontal"&gt;
+    &lt;div class="card-image-wrapper"&gt;
+        &lt;img
+            class="img-responsive"
+            src="https://cf.geekdo-images.com/uiVZ7QVfRFQx3EBG8eDU8w__opengraph/img/XrCi7i4a7U0T5SORtna7w9QghYA=/fit-in/1200x630/filters:strip_icc()/pic6339446.png"
+        /&gt;
+    &lt;/div&gt;
+    &lt;div class="card-product-details"&gt;
+        &lt;button class="card-close"&gt;
+            &lt;span class="material-icons"&gt; close &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;h3 class="card-title"&gt;Hanamikoji&lt;/h3&gt;
+        &lt;p class="card-product-description"&gt;Based on set collection&lt;/p&gt;
+        &lt;div class="card-product-price"&gt;
+            &lt;span class="card-product-newprice"&gt;Rs.1299&lt;/span&gt;
+            &lt;span class="card-product-actualprice"&gt;Rs.1599&lt;/span&gt;
+            &lt;span class="card-product-discount"&gt;18% off&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="card-product-quantity"&gt;
+            &lt;span class="product-qty"&gt;Qty:&lt;/span&gt;
+            &lt;select class="qty"&gt;
+                &lt;option value="1"&gt;1&lt;/option&gt;
+                &lt;option value="2"&gt;2&lt;/option&gt;
+                &lt;option value="3"&gt;3&lt;/option&gt;
+                &lt;option value="4"&gt;4&lt;/option&gt;
+                &lt;option value="5"&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../button/button.html">Button</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../drawer/drawer.html">Drawer</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

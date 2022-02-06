@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Drawer</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link active">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Drawer</h2>
+				<div class="blocktext">
+					Drawer is used to navigate the different tabs using a side menu. A
+					drawer typically slides out from the left / right side when browsing
+					the site in smaller screens
+					<p>
+						<code class="code-highlight">drawer</code> - The main class; has to
+						be given to the wrapper div containing the content
+					</p>
+					<p>
+						<code class="code-highlight">drawer-label</code> - Optional; Used
+						for giving any labels to the drawer; is not used as a tab for
+						navigation
+					</p>
+					<p>
+						<code class="code-highlight">drawer-link</code> - The main class;
+						has to be given to the anchor tags which are used as navigation tabs
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="drawer border-black">
+						<p class="drawer-label fw-500">Getting Started</p>
+						<div class="divider-black mb-0-5"></div>
+						<a href="#" class="drawer-link">Installation</a>
+						<a href="#" class="drawer-link">Colours</a>
+						<a href="#" class="drawer-link">Typography</a>
+						<a href="#" class="drawer-link">Utilities</a>
+						<p class="drawer-label fw-500">Components</p>
+						<div class="divider-black mb-0-5"></div>
+						<a href="#" class="drawer-link">Alert</a>
+						<a href="#" class="drawer-link">Avatar</a>
+						<a href="#" class="drawer-link">Badge</a>
+					</div>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;div class="drawer"&gt;
+    &lt;p class="drawer-label fw-500"&gt;Getting Started&lt;/p&gt;
+    &lt;div class="divider-black mb-0-5"&gt;&lt;/div&gt;
+    &lt;a href="#" class="drawer-link"&gt;Installation&lt;/a&gt;
+    &lt;a href="#" class="drawer-link"&gt;Colours&lt;/a&gt;
+    &lt;a href="#" class="drawer-link"&gt;Typography&lt;/a&gt;
+    &lt;a href="#" class="drawer-link"&gt;Utilities&lt;/a&gt;
+    &lt;p class="drawer-label fw-500"&gt;Components&lt;/p&gt;
+    &lt;div class="divider-black mb-0-5"&gt;&lt;/div&gt;
+    &lt;a href="#" class="drawer-link"&gt;Alert&lt;/a&gt;
+    &lt;a href="#" class="drawer-link"&gt;Avatar&lt;/a&gt;
+    &lt;a href="#" class="drawer-link"&gt;Badge&lt;/a&gt;
+&lt;/div&gt;
+                </code></pre>
+
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../card/cards.html">Cards</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../images/images.html">Image</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

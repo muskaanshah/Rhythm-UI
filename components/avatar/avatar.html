@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Avatar</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link active">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Avatar</h2>
+				<p class="blocktext">
+					Avatar icons are used to display a small profile picture for the user
+					who logs in.
+				</p>
+				<h3>Picture avatar</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">avatar</code> - The main class; has to
+						be used when the avatar has to be displayed; can be styled with
+						other classes to give other effects; has to be given to the img
+						class
+					</p>
+					<p>
+						<code class="code-highlight">avatar-lg</code> - Optional; to be used
+						when the avatar needs to be larger than usual
+					</p>
+					<p>
+						<code class="code-highlight">alert-sm</code> - Optional; to be used
+						when the avatar needs to be smaller than usual
+					</p>
+				</div>
+				<p class="blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> The
+					border radius is changing by using the borderradius property as
+					mentioned in the Utilities section
+				</p>
+
+				<div class="centered blocktext">
+					<img
+						class="avatar avatar-lg borderradius-full"
+						src="https://i.ibb.co/YWTbNKm/Deepika-Padukone-1200-PTI-0.jpg"
+						alt="avatar image"
+					/>
+					<img
+						class="avatar borderradius-2"
+						src="https://i.ibb.co/k1sj28r/Ian-Somerhalder-2-1200x845.jpg"
+						alt="avatar image"
+					/>
+					<img
+						class="avatar avatar-sm"
+						src="https://i.ibb.co/Q64Rqtg/Shakti-Mohan-Pictures-641x1024.jpg"
+						alt="avatar image"
+					/>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;img class="avatar avatar-lg borderradius-full" src="https://i.ibb.co/YWTbNKm/Deepika-Padukone-1200-PTI-0.jpg" alt="avatar image"&gt;
+&lt;img class="avatar borderradius-2" src="https://i.ibb.co/k1sj28r/Ian-Somerhalder-2-1200x845.jpg" alt="avatar image"&gt;
+&lt;img class="avatar avatar-sm" src="https://i.ibb.co/Q64Rqtg/Shakti-Mohan-Pictures-641x1024.jpg" alt="avatar image"&gt;
+                </code></pre>
+				<h3>Initials avatar</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">avatar-default</code> - for default
+						size; has to be used when the avatar has to be displayed in initials
+						format; can be styled with other classes to give other effects; can
+						be given on a span or a div class
+					</p>
+					<p>
+						<code class="code-highlight">avatar-default-lg</code> - to be used
+						for a larger size size
+					</p>
+					<p>
+						<code class="code-highlight">avatar-default-sm</code> - to be used
+						for a smaller size
+					</p>
+				</div>
+				<p class="blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> The
+					colour styles are used for styling the avatar
+				</p>
+
+				<div class="centered blocktext">
+					<span
+						class="avatar-default-lg borderradius-full bg-primary color-white"
+						>MS</span
+					>
+					<span
+						class="avatar-default borderradius-full bg-secondary color-primary"
+						>PK</span
+					>
+					<span
+						class="avatar-default-sm borderradius-full bg-primary color-white"
+						>AT</span
+					>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;span class="avatar-default-lg borderradius-full bg-primary color-white"&gt;MS&lt;/span&gt;
+&lt;span class="avatar-default borderradius-full bg-secondary color-primary"&gt;PK&lt;/span&gt;
+&lt;span class="avatar-default-sm borderradius-full bg-primary color-white"&gt;AT&lt;/span&gt;
+                </code></pre>
+
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../alert/alert.html">Alert</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../badge/badge.html">Badge</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

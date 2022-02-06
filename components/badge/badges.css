@@ -1,0 +1,50 @@
+@import url(../Avatar/avatar.css);
+@import url(../utilities.css);
+@import url(../colorstyle.css);
+
+.badge-container {
+	position: relative;
+	display: inline-block;
+}
+
+.badge-container .material-icons {
+	font-size: 36px;
+}
+
+.badge {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+.badge-number {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.badge-status {
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	bottom: 8%;
+	right: 4%;
+	border: 2px solid var(--white);
+	background-color: var(--grey);
+}
+
+.badge-online {
+	background-color: green;
+}
+
+.badge-busy {
+	background-color: var(--danger);
+}
+
+.badge-offline {
+	background-color: var(--grey);
+}

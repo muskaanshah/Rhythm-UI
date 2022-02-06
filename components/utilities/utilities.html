@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI - Utilities</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link active"
+					>Utilities</a
+				>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Utilities</h2>
+				<p class="blocktext">
+					Rhythm has a variety of utility classes which helps you customise your
+					page in the exact way that you want it to be.
+				</p>
+				<h3>Padding</h3>
+				<div class="font-wrapper blocktext">
+					<p>
+						<code class="code-highlight">p</code> - this specifies the padding
+						on all 4 sides of the element
+					</p>
+					<p>
+						<code class="code-highlight">px</code> - this specifies the padding
+						on the x-axis (left and right only)
+					</p>
+					<p>
+						<code class="code-highlight">py</code> - this specifies the padding
+						on the y-axis (top and bottom only)
+					</p>
+					<p>
+						<code class="code-highlight">pt</code> - this specifies the padding
+						only on the top
+					</p>
+					<p>
+						<code class="code-highlight">pb</code> - this specifies the padding
+						only on the bottom
+					</p>
+					<p>
+						<code class="code-highlight">pr</code> - this specifies the padding
+						only on the right
+					</p>
+					<p>
+						<code class="code-highlight">pl</code> - this specifies the padding
+						only on the left
+					</p>
+				</div>
+				<h3>Margin</h3>
+				<div class="font-wrapper blocktext">
+					<p>
+						<code class="code-highlight">m</code> - this specifies the margin on
+						all 4 sides of the element
+					</p>
+					<p>
+						<code class="code-highlight">mx</code> - this specifies the margin
+						on the x-axis (left and right only)
+					</p>
+					<p>
+						<code class="code-highlight">my</code> - this specifies the margin
+						on the y-axis (top and bottom only)
+					</p>
+					<p>
+						<code class="code-highlight">mt</code> - this specifies the margin
+						only on the top
+					</p>
+					<p>
+						<code class="code-highlight">mb</code> - this specifies the margin
+						only on the bottom
+					</p>
+					<p>
+						<code class="code-highlight">mr</code> - this specifies the margin
+						only on the right
+					</p>
+					<p>
+						<code class="code-highlight">ml</code> - this specifies the margin
+						only on the left
+					</p>
+				</div>
+				<h3>Values</h3>
+				<div class="font-wrapper blocktext">
+					<p><code class="code-highlight">0</code> - value of this is 0rem</p>
+					<p>
+						<code class="code-highlight">0-5</code> - value of this is 0.5rem
+					</p>
+					<p><code class="code-highlight">1</code> - value of this is 1rem</p>
+					<p>
+						<code class="code-highlight">1-5</code> - value of this is 1.5rem
+					</p>
+					<p><code class="code-highlight">2</code> - value of this is 2rem</p>
+					<p>
+						<code class="code-highlight">2-5</code> - value of this is 2.5rem
+					</p>
+					<p><code class="code-highlight">3</code> - value of this is 3rem</p>
+				</div>
+				<p>
+					The user can add any of the styles mentioned in the padding and margin
+					section with any value which suits their need for more customisation.
+				</p>
+				<p class="fw-400 blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> Apart
+					from the above mentioned tags, we also have
+					<code class="code-highlight">px-auto</code> and
+					<code class="code-highlight">mx-auto</code> which can be used to set
+					the padding and margin on both sides respectively.
+				</p>
+				<pre class="code-example"><code class="html">
+/* Padding and margin to be used like this along with the values */
+&lt;div class="pr-1 py-2-5 mb-0-5"&gt;&lt;/div&gt;
+                </code></pre>
+				<h3>Border radius</h3>
+				<div class="font-wrapper blocktext">
+					<div class="bg-warning-light borderradius-0 p-1 my-1">
+						borderradius-0 - border radius is not applied
+					</div>
+					<div class="bg-danger-light borderradius-0-5 p-1 my-1">
+						borderradius-0-5 - border radius of 0.5rem
+					</div>
+					<div class="bg-success-light borderradius-1 p-1 my-1">
+						borderradius-1 - border radius of 1rem
+					</div>
+					<div class="bg-warning-light borderradius-1-25 p-1 my-1">
+						borderradius-1-25 - border radius of 1.25rem
+					</div>
+					<div class="bg-danger-light borderradius-1-5 p-1 my-1">
+						borderradius-1-5 - border radius of 1.5rem
+					</div>
+					<div class="bg-success-light borderradius-2 p-1-5 my-1">
+						borderradius-2 - border radius of 2rem
+					</div>
+					<div
+						class="bg-grey-light borderradius-full p-1 my-1 centered mx-auto"
+						style="width: 80px; height: 80px"
+					>
+						border radius of 50%
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="borderradius-0"&gt;border radius is not applied&lt;/div&gt;
+&lt;div class="borderradius-0-5"&gt;border radius of 0.5rem applied&lt;/div&gt;
+&lt;div class="borderradius-1"&gt;border radius of 1rem applied&lt;/div&gt;
+&lt;div class="borderradius-1-25"&gt;border radius of 1.25rem applied&lt;/div&gt;
+&lt;div class="borderradius-1-5"&gt;border radius of 1.5rem applied&lt;/div&gt;
+&lt;div class="borderradius-2"&gt;border radius of 2rem applied&lt;/div&gt;
+&lt;div class="borderradius-full"&gt;border radius of 50%&lt;/div&gt; /* gives circle when square element */
+                </code></pre>
+				<h3>Box shadow</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">boxshadow-light</code> - box shadow is
+						of a very light density
+					</p>
+					<p>
+						<code class="code-highlight">boxshadow-medium</code> - box shadow is
+						of a medium density
+					</p>
+					<p>
+						<code class="code-highlight">boxshadow-dark</code> - box shadow is
+						of a dark density
+					</p>
+					<p>
+						<code class="code-highlight">boxshadow-emboss</code> - box shadow is
+						applied only on two sides and gives an embossed effect
+					</p>
+				</div>
+				<div class="centered blocktext boxshadow-wrapper">
+					<div class="boxshadow-light bg-success-light">Light shadow</div>
+					<div class="boxshadow-medium bg-danger-light">Medium shadow</div>
+					<div class="boxshadow-dark bg-warning-light">Dark shadow</div>
+					<div class="boxshadow-emboss bg-secondary">Embossed shadow</div>
+				</div>
+				<pre class="code-example"><code class="tag">
+&lt;div class="boxshadow-light bg-success-light"&gt;Light shadow&lt;/div&gt;
+&lt;div class="boxshadow-medium bg-danger-light"&gt;Medium shadow&lt;/div&gt;
+&lt;div class="boxshadow-dark bg-warning-light"&gt;Dark shadow&lt;/div&gt;
+&lt;div class="boxshadow-emboss bg-secondary"&gt;Embossed shadow&lt;/div&gt;
+                </code></pre>
+				<h3>Other misc</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">centered</code> - centers the contents
+						according to x-axis and y-axis - has to be mentioned on the parent
+						container
+					</p>
+					<p>
+						<code class="code-highlight">divider-black</code> - gives a small
+						thin line in between
+					</p>
+				</div>
+				<div class="centered blocktext"><div class="divider-black"></div></div>
+				<pre class="code-example"><code class="tag">
+&lt;div class="centered"&gt;&lt;div class="divider-black"&gt;&lt;/div&gt;&lt;/div&gt;
+                </code></pre>
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span
+						><a href="../typography/typography.html">Typography</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../alert/alert.html">Alert</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

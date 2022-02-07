@@ -1,0 +1,41 @@
+.input-text {
+	width: 50%;
+	padding: 1rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	display: inline-block;
+}
+
+.input-wrong-password {
+	outline: none;
+	border: 2px solid var(--danger);
+	display: inline-block;
+}
+
+.input-wrong-password::placeholder {
+	color: var(--danger);
+}
+
+.input-wrong-password:focus {
+	border: 2px solid black;
+}
+
+.input-disabled {
+	background-color: var(--grey-light);
+}
+
+.input-disabled:hover {
+	cursor: not-allowed;
+}
+
+.input-text {
+	display: inline-block;
+}
+
+.radio-group,
+.checkbox-group {
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}

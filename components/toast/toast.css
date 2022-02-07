@@ -1,0 +1,32 @@
+.toast {
+	max-width: 50%;
+	align-items: center;
+	gap: 1rem;
+	color: var(--white);
+	background-color: var(--grey-dark);
+	display: inline-flex;
+	padding: 0.5rem 1rem;
+}
+
+.toast-link {
+	text-decoration: none;
+	color: var(--warning);
+}
+
+.toast-close {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+}
+
+.toast-close .material-icons {
+	font-size: 1rem;
+}
+
+.toast-link {
+	text-decoration: underline;
+}
+
+.toast-close:hover {
+	cursor: pointer;
+}

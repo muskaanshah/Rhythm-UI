@@ -1,0 +1,31 @@
+.nav {
+	display: flex;
+	justify-content: right;
+	list-style-type: none;
+	gap: 10px;
+}
+
+.nav-item {
+	padding: 1rem;
+}
+
+.nav-item a,
+.nav-logo a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+.nav-item:hover {
+	background-color: var(--tealgreen-light);
+}
+
+.nav-logo {
+	flex-grow: 1;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.nav-logo-img {
+	height: 3rem;
+	width: auto;
+}

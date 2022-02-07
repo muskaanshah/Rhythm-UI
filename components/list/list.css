@@ -1,0 +1,43 @@
+.ordered-list {
+	list-style-type: lower-alpha;
+	max-width: 15rem;
+}
+
+.unordered-list {
+	list-style-type: circle;
+	max-width: 15rem;
+}
+
+.image-list {
+	list-style-type: "🎲";
+	max-width: 15rem;
+}
+
+.notype-list {
+	list-style-type: none;
+	max-width: 15rem;
+}
+
+.ordered-list .list-title,
+.ordered-list li,
+.ordered-list .list-subtitle,
+.unordered-list .list-title,
+.unordered-list li,
+.unordered-list .list-subtitle,
+.image-list .list-title,
+.image-list li,
+.image-list .list-subtitle,
+.notype-list .list-title,
+.notype-list li,
+.notype-list .list-subtitle {
+	padding: 0.8rem;
+}
+
+.list-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.list-subtitle {
+	font-weight: 600;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | List</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link active">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>List</h2>
+				<div class="blocktext">
+					Lists are used to display items in an orderly manner.
+				</div>
+				<h3>Ordered list</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">ordered-list</code> - Main class; to be
+						given to the ol element which has the list items
+					</p>
+					<p>
+						<code class="code-highlight">list-title</code> - To be given if
+						there's a heading for the list items
+					</p>
+				</div>
+				<div class="blocktext">
+					<div>
+						<ol class="ordered-list">
+							<div class="list-title">Fun Games</div>
+							<div class="divider-black"></div>
+							<li>Tumblin dice</li>
+							<li>Chameleon</li>
+							<li>Ooga Booga</li>
+							<li>Fastrack</li>
+							<li>Geistz</li>
+						</ol>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;ol class="ordered-list"&gt;
+    &lt;div class="list-title"&gt;Fun Games&lt;/div&gt;
+    &lt;div class="divider-black"&gt;&lt;/div&gt;
+    &lt;li&gt;Tumblin dice&lt;/li&gt;
+    &lt;li&gt;Chameleon&lt;/li&gt;
+    &lt;li&gt;Ooga Booga&lt;/li&gt;
+    &lt;li&gt;Fastrack&lt;/li&gt;
+    &lt;li&gt;Geistz&lt;/li&gt;
+&lt;/ol&gt;
+                </code></pre>
+				<h3>Unordered list</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">unordered-list</code> - Main class; to
+						be given to the ul element which has the list items
+					</p>
+				</div>
+				<div class="blocktext">
+					<div>
+						<ul class="unordered-list">
+							<div class="list-title">Group Games (4+)</div>
+							<div class="divider-black"></div>
+							<li>Taboo</li>
+							<li>Tsuro</li>
+							<li>Bang - The dice game</li>
+							<li>Coup</li>
+							<li>Hail Hydra</li>
+						</ul>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;ul class="unordered-list"&gt;
+    &lt;div class="list-title"&gt;Group Games&lt;/div&gt;
+    &lt;div class="divider-black"&gt;&lt;/div&gt;
+    &lt;li&gt;Taboo&lt;/li&gt;
+    &lt;li&gt;Tsuro&lt;/li&gt;
+    &lt;li&gt;Bang - The dice game&lt;/li&gt;
+    &lt;li&gt;Coup&lt;/li&gt;
+    &lt;li&gt;Hail Hydra&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+				<h3>List with an image as bullet</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">image-list</code> - Main class; to be
+						given to the ul element which has the list items; feel free to
+						override the image by writing your own CSS
+					</p>
+				</div>
+				<div class="blocktext">
+					<div>
+						<ul class="image-list">
+							<div class="list-title">2 player games</div>
+							<div class="divider-black"></div>
+							<li>Jaipur</li>
+							<li>Lost cities</li>
+							<li>Hanamikoji</li>
+							<li>Onitama</li>
+							<li>Abalone</li>
+						</ul>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;ul class="image-list"&gt;
+    &lt;div class="list-title"&gt;2 player games&lt;/div&gt;
+    &lt;div class="divider-black"&gt;&lt;/div&gt;
+    &lt;li&gt;Jaipur&lt;/li&gt;
+    &lt;li&gt;Lost cities&lt;/li&gt;
+    &lt;li&gt;Hanamikoji&lt;/li&gt;
+    &lt;li&gt;Onitama&lt;/li&gt;
+    &lt;li&gt;Abalone&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+				<h3>List without any numbering / bullets</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">notype-list</code> - Main class; to be
+						given to the ul / ol element which has the list items
+					</p>
+				</div>
+				<div class="blocktext">
+					<div>
+						<ul class="notype-list">
+							<div class="list-title">Cooperative games</div>
+							<div class="divider-black"></div>
+							<li>Codenames</li>
+							<li>Cahoots</li>
+							<li>Pandemic</li>
+							<li>Forbidden Island</li>
+						</ul>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;ul class="notype-list"&gt;
+    &lt;div class="list-title"&gt;Cooperative games&lt;/div&gt;
+    &lt;div class="divider-black"&gt;&lt;/div&gt;
+    &lt;li&gt;Codenames&lt;/li&gt;
+    &lt;li&gt;Cahoots&lt;/li&gt;
+    &lt;li&gt;Pandemic&lt;/li&gt;
+    &lt;li&gt;Forbidden Island&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+				<h3>Nested list</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">list-subtitle</code> - To be given if
+						there's a heading for the sub-list items
+					</p>
+				</div>
+				<div class="blocktext">
+					<div>
+						<ul class="notype-list">
+							<div class="list-title">Strategic games</div>
+							<div class="divider-black"></div>
+							<li>Centuries</li>
+							<li>Catan</li>
+							<li>Azul</li>
+							<div class="list-subtitle">Fun games</div>
+							<ul class="notype-list">
+								<li>Coloretto</li>
+								<li>Reef</li>
+								<li>Planet</li>
+								<li>Lotus</li>
+							</ul>
+							<li>Imhotep</li>
+						</ul>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;ul class="notype-list"&gt;
+    &lt;div class="list-title"&gt;Strategic games&lt;/div&gt;
+    &lt;div class="divider-black"&gt;&lt;/div&gt;
+    &lt;li&gt;Centuries&lt;/li&gt;
+    &lt;li&gt;Catan&lt;/li&gt;
+    &lt;li&gt;Azul&lt;/li&gt;
+    &lt;div class="list-subtitle"&gt;Fun games&lt;/div&gt;
+    &lt;ul class="notype-list"&gt;
+        &lt;li&gt;Coloretto&lt;/li&gt;
+        &lt;li&gt;Reef&lt;/li&gt;
+        &lt;li&gt;Planet&lt;/li&gt;
+        &lt;li&gt;Lotus&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;Imhotep&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../input/input.html">Input</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../navigation/navigation.html">Navigation</a
+						><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

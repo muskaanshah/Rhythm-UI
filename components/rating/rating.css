@@ -1,0 +1,8 @@
+.rating-star-unchecked {
+	color: var(--grey);
+}
+
+.rating-star-unchecked:hover,
+.rating-star-checked {
+	color: var(--warning);
+}

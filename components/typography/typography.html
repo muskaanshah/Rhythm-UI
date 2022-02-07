@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI - Typography</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link active"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Typography</h2>
+				<p class="blocktext">Rhythm uses different typography styles.</p>
+				<h3>Font sizes</h3>
+				<div class="font-wrapper blocktext">
+					<p class="fs-0-5">font-size: 0.5rem</p>
+					<p class="fs-0-8">font-size: 0.8rem</p>
+					<p class="fs-1">font-size: 1rem</p>
+					<p class="fs-1-25">font-size: 1.25rem</p>
+					<p class="fs-1-5">font-size: 1.5rem</p>
+					<p class="fs-2">font-size: 2rem</p>
+					<p class="fs-2-5">font-size: 2.5rem</p>
+					<p class="fs-3">font-size: 3rem</p>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;p class="fs-0-5"&gt;font-size: 0.5rem&lt;/p&gt;
+&lt;p class="fs-0-8"&gt;font-size: 0.8rem&lt;/p&gt;
+&lt;p class="fs-1"&gt;font-size: 1rem&lt;/p&gt;
+&lt;p class="fs-1-25"&gt;font-size: 1.25rem&lt;/p&gt;
+&lt;p class="fs-1-5"&gt;font-size: 1.5rem&lt;/p&gt;
+&lt;p class="fs-2"&gt;font-size: 2rem&lt;/p&gt;
+&lt;p class="fs-2-5"&gt;font-size:2.5rem&lt;/p&gt;
+&lt;p class="fs-3"&gt;font-size: 3rem&lt;/p&gt;
+                </code></pre>
+				<h3>Font weights</h3>
+				<div class="font-wrapper blocktext">
+					<p class="fw-300">font-weight: 300</p>
+					<p class="fw-400">font-weight: 400</p>
+					<p class="fw-500">font-weight: 500</p>
+					<p class="fw-600">font-weight: 600</p>
+					<p class="fw-700">font-weight: 700</p>
+					<p class="fw-800">font-weight: 800</p>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;p class="fw-300"&gt;font-weight: 300&lt;/p&gt;
+&lt;p class="fw-400"&gt;font-weight: 400&lt;/p&gt;
+&lt;p class="fw-500"&gt;font-weight: 500&lt;/p&gt;
+&lt;p class="fw-600"&gt;font-weight: 600&lt;/p&gt;
+&lt;p class="fw-700"&gt;font-weight: 700&lt;/p&gt;
+&lt;p class="fw-800"&gt;font-weight: 800&lt;/p&gt;
+                </code></pre>
+				<h3>Text decoration</h3>
+				<div class="font-wrapper blocktext">
+					<p class="text-underline">Underlined text</p>
+					<p class="text-strikethrough">Striked text</p>
+					<p class="text-light">Light coloured text</p>
+					<p class="text-none">Text without any decoration</p>
+					<p class="ls-1">Text with letter-spacing as 1rem</p>
+					<p class="ls-2">Text with letter-spacing as 2rem</p>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;p class="text-underline"&gt;Underlined text&lt;/p&gt;
+&lt;p class="text-strikethrough"&gt;Striked text&lt;/p&gt;
+&lt;p class="text-light"&gt;Light coloured text&lt;/p&gt;
+&lt;p class="text-none"&gt;Text without any decoration&lt;/p&gt;
+&lt;p class="ls-1"&gt;Text with letter-spacing as 1rem&lt;/p&gt;
+&lt;p class="ls-2"&gt;Text with letter-spacing as 2rem&lt;/p&gt;
+									</code></pre>
+				<p class="blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> The
+					heading <code class="code-highlight">&lt;h1&gt;</code>,
+					<code class="code-highlight">&lt;h2&gt;</code>,
+					<code class="code-highlight">&lt;h3&gt;</code>,
+					<code class="code-highlight">&lt;h4&gt;</code>,
+					<code class="code-highlight">&lt;h5&gt;</code>,
+					<code class="code-highlight">&lt;h6&gt;</code> tags work in the usual
+					manner.
+				</p>
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../colours/colors.html">Colours</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../utilities/utilities.html">Utilities</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

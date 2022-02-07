@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../style.css" />
+		<title>Rhythm UI - Installation</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../index.html">Rhythm UI</a>
+			<a href="../index.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="installation.html" class="drawer-link">Installation</a>
+				<a href="colours/colors.html" class="drawer-link">Colours</a>
+				<a href="typography/typography.html" class="drawer-link">Typography</a>
+				<a href="utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="alert/alert.html" class="drawer-link">Alert</a>
+				<a href="avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="badge/badge.html" class="drawer-link">Badge</a>
+				<a href="button/button.html" class="drawer-link active">Button</a>
+				<a href="card/cards.html" class="drawer-link">Card</a>
+				<a href="drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="images/images.html" class="drawer-link">Image</a>
+				<a href="input/input.html" class="drawer-link">Input</a>
+				<a href="list/lists.html" class="drawer-link">Lists</a>
+				<a href="navigation/navigation.html" class="drawer-link">Navigation</a>
+				<a href="rating/rating.html" class="drawer-link">Rating</a>
+				<a href="toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Installation</h2>
+				<p class="blocktext">
+					Rhythm is a free, open source framework that allows you to design and
+					build web Apps faster by providing a range of reusable components.
+				</p>
+				<p class="ls-1 blocktext">RYHTHM - ADDING RHYTHM TO YOUR CODE</p>
+				<p>
+					Before you proceed, add the below link in the
+					<code class="code-highlight"> &lt;head&gt;</code> tag of your html
+					code to get all the features.
+				</p>
+				<pre class="code-example"><code class="tag">
+&lt;link href="dummy.css" rel="stylesheet"&gt;
+                </code></pre>
+				<p class="fw-400 blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> There
+					are elements which might require Javascript but they are not present
+					in the library since it will be difficult to accomodate everyone's
+					requirements and customiation will be difficult. Hence, the user will
+					have to code their own Javascript.
+				</p>
+
+				<p class="blocktext">
+					This library uses fonts and icons from Google fonts and Material
+					Design. The Google fonts are already imported when you import the CSS
+					library link mentioned above. But for the same user experience, do
+					include the below link which is for the various icons.
+				</p>
+				<pre class="code-example"><code class="tag">
+&lt;link
+href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|
+Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+rel="stylesheet"&gt;
+                </code></pre>
+				<p class="blocktext">
+					For every component, we have tried our best to provide you with
+					variable versions so that there is very less customisation which is
+					required by you. But if you want to specifically change the styling of
+					a few elements in the component, you can use our utility classes too
+					which will help you customise your code the way you want. And if
+					you're still not satisfied with the styling, you can define your own
+					classes and override styles which you want to change
+				</p>
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left"></div>
+					<div class="page-navigation-right">
+						<a href="colours/colors.html">Colours</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

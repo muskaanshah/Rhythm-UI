@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Input</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythmui" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link active">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Input</h2>
+				<div class="blocktext">
+					Input elements are used to get the response from the user. This can be
+					in the form of a variety pf elements - input boxes, radio buttons,
+					checkboxes, text area, etc.
+				</div>
+				<h3>Text Input</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">input-text</code> - To be given to the
+						input element which takes in text, passwords
+					</p>
+					<p>
+						<code class="code-highlight">input-wrong-password</code> - Style to
+						be applied when the password is wrong
+					</p>
+					<p>
+						<code class="code-highlight">input-disabled</code> - To be given
+						when the user shouldn't be allowed to enter anything in the input
+						box
+					</p>
+				</div>
+				<div class="blocktext">
+					<input type="input" class="input-text" placeholder="Username" />
+					<input type="password" class="input-text" placeholder="Password" />
+					<input
+						type="password"
+						class="input-text input-wrong-password"
+						placeholder="Wrong password"
+					/>
+					<input
+						type="input"
+						class="input-text input-disabled"
+						placeholder="Disabled"
+						disabled
+					/>
+				</div>
+				<p class="fw-400 blocktext">
+					<span class="color-tealgreen fw-500 text-underline">Note:</span> When
+					using disabled classes, don't forget to add the 'disabled' keyword in
+					the html
+				</p>
+
+				<pre class="code-example"><code class="html">
+&lt;div&gt;
+    &lt;input type="input" class="input-text" placeholder="Username" /&gt;
+    &lt;input type="password" class="input-text" placeholder="Password" /&gt;
+    &lt;input type="password" class="input-text input-wrong-password" placeholder="Wrong password"/&gt;
+    &lt;input type="input" class="input-text input-disabled" placeholder="Disabled" disabled /&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Radio buttons</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">radio-group</code> - To be given to the
+						wrapper class containing all the radio buttons; can be omitted if
+						only one radio button is present
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="radio-group">
+						<label for="radio-1">
+							<input
+								id="radio-1"
+								type="radio"
+								name="radio"
+								value="checked"
+								checked
+							/>
+							Checked
+						</label>
+						<label for="radio-2">
+							<input id="radio-2" type="radio" name="radio" value="unchecked" />
+							Unchecked
+						</label>
+						<label for="radio-3">
+							<input
+								id="radio-3"
+								type="radio"
+								name="radio"
+								value="disabled"
+								disabled
+							/>
+							Disabled
+						</label>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="radio-group"&gt;
+    &lt;label for="radio-1"&gt;
+        &lt;input id="radio-1" type="radio" name="radio" value="checked" checked /&gt;
+        Checked
+    &lt;/label&gt;
+    &lt;label for="radio-2"&gt;
+        &lt;input id="radio-2" type="radio" name="radio" value="unchecked" /&gt;
+        Unchecked
+    &lt;/label&gt;
+    &lt;label for="radio-3"&gt;
+        &lt;input id="radio-3" type="radio" name="radio" value="disabled" disabled /&gt;
+        Disabled
+    &lt;/label&gt;
+&lt;/div&gt;
+                </code></pre>
+				<h3>Checkboxes</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">checkbox-group</code> - To be given to
+						the wrapper class containing all the checkboxes; can be omitted if
+						only one checkbox is present
+					</p>
+				</div>
+				<div class="centered blocktext">
+					<div class="checkbox-group">
+						<label for="checkbox-1">
+							<input
+								id="checkbox-1"
+								type="checkbox"
+								name="checkbox"
+								value="checked"
+								checked
+							/>
+							Checked
+						</label>
+						<label for="checkbox-2">
+							<input
+								id="checkbox-2"
+								type="checkbox"
+								name="checkbox"
+								value="unchecked"
+							/>
+							Unchecked
+						</label>
+						<label for="checkbox-3">
+							<input
+								id="checkbox-3"
+								type="checkbox"
+								name="checkbox"
+								value="disabled"
+								disabled
+							/>
+							Disabled
+						</label>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="checkbox-group"&gt;
+    &lt;label for="checkbox-1"&gt;
+        &lt;input id="checkbox-1"type="checkbox" name="checkbox" value="checked" checked /&gt;
+        Checked
+    &lt;/label&gt;
+    &lt;label for="checkbox-2"&gt;
+        &lt;input id="checkbox-2" type="checkbox" name="checkbox" value="unchecked" /&gt;
+        Unchecked
+    &lt;/label&gt;
+    &lt;label for="checkbox-3"&gt;
+        &lt;input id="checkbox-3" type="checkbox" name="checkbox" value="disabled" disabled /&gt;
+        Disabled
+    &lt;/label&gt;
+&lt;/div&gt;
+                </code></pre>
+
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span><a href="../images/images.html">Image</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../list/lists.html">List</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+.modal {
+	border-radius: 10px;
+	max-width: 20rem;
+	background-color: rgb(240, 240, 240);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem;
+	position: relative;
+}
+
+.modal-body {
+	font-size: 1.1rem;
+	margin: 0.5rem;
+	text-align: center;
+}
+
+.modal-actionbuttons {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+	.modal-actionbuttons {
+		flex-direction: row; /* here it gets changed to 12px */
+	}
+}

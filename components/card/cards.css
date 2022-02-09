@@ -34,7 +34,7 @@ button:hover {
 	cursor: pointer;
 }
 
-.card-close,
+.btn-close,
 .card-product-favourite {
 	position: absolute;
 	top: 0.5rem;
@@ -47,13 +47,13 @@ button:hover {
 	align-items: center;
 }
 
-.card-close:hover {
+.btn-close:hover {
 	border-radius: 50%;
 	background-color: var(--grey-light);
 	opacity: 70%;
 }
 
-.card-close .material-icons {
+.btn-close .material-icons {
 	font-size: 1rem;
 }
 

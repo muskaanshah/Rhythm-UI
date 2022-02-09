@@ -1,7 +1,3 @@
-@import url(../Avatar/avatar.css);
-@import url(../utilities.css);
-@import url(../colorstyle.css);
-
 .badge-container {
 	position: relative;
 	display: inline-block;

@@ -1,6 +1,3 @@
-@import url(../utilities.css);
-@import url(../colorstyle.css);
-
 .alert {
 	background-color: var(--grey-light);
 	color: var(--grey-dark);

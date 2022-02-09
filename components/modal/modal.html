@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/decaf.min.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Rhythm UI | Rating</title>
+	</head>
+
+	<body>
+		<div class="navbar centered">
+			<a href="../../index.html">Rhythm UI</a>
+			<a href="../installation.html" class="centered active-navbar">Docs</a>
+			<a href="https://github.com/muskaanshah/Rhythm-UI" class="centered"
+				>Github</a
+			>
+		</div>
+		<div class="documentation-page">
+			<div class="drawer drawernew drawer-toggle" data-visible="true">
+				<p class="drawer-label fw-500">Getting Started</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../installation.html" class="drawer-link">Installation</a>
+				<a href="../colours/colors.html" class="drawer-link">Colours</a>
+				<a href="../typography/typography.html" class="drawer-link"
+					>Typography</a
+				>
+				<a href="../utilities/utilities.html" class="drawer-link">Utilities</a>
+				<p class="drawer-label fw-500">Components</p>
+				<div class="divider-black mb-0-5"></div>
+				<a href="../alert/alert.html" class="drawer-link">Alert</a>
+				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../badge/badge.html" class="drawer-link">Badge</a>
+				<a href="../button/button.html" class="drawer-link">Button</a>
+				<a href="../card/cards.html" class="drawer-link">Card</a>
+				<a href="../drawer/drawer.html" class="drawer-link">Drawer</a>
+				<a href="../images/images.html" class="drawer-link">Image</a>
+				<a href="../input/input.html" class="drawer-link">Input</a>
+				<a href="../list/lists.html" class="drawer-link">Lists</a>
+				<a href="../navigation/navigation.html" class="drawer-link"
+					>Navigation</a
+				>
+				<a href="../modal/modal.html" class="drawer-link active">Modal</a>
+				<a href="../slider/slider.html" class="drawer-link">Slider</a>
+				<a href="../rating/rating.html" class="drawer-link">Rating</a>
+				<a href="../toast/toast.html" class="drawer-link">Toast</a>
+			</div>
+			<div class="documentation-content p-3">
+				<button
+					aria-controls="drawer"
+					aria-expanded="false"
+					class="components-menu-hamburger"
+				>
+					<span class="material-icons-round fs-2"> menu </span>
+				</button>
+				<h2>Modal</h2>
+				<p>
+					The Modal component is a dialog box/popup window. It requires action
+					to be taken by the user before it can be returned to the main window.
+				</p>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">modal</code> - The main class; to be
+						given to div containing the elements
+					</p>
+					<p>
+						<code class="code-highlight">modal-body</code> - To be given to the
+						information which requires an action from the user
+					</p>
+					<p>
+						<code class="code-highlight">modal-actionbuttons</code> - To be
+						given to the wrapper div containing the call to action buttons
+					</p>
+					<p>
+						<code class="code-highlight">btn-close</code> - Optional; is
+						inherited from the card component
+					</p>
+				</div>
+				<div class="blocktext centered">
+					<div class="modal">
+						<button class="btn-close">
+							<span class="material-icons"> close </span>
+						</button>
+						<p class="modal-body">Are you sure you want to remove this item?</p>
+						<div class="modal-actionbuttons">
+							<button class="btn bg-danger color-white">
+								Delete
+								<span class="material-icons"> delete </span>
+							</button>
+							<button class="btn bg-success color-white">
+								Move to wishlist
+								<span class="material-icons"> shopping_bag </span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<pre class="code-example"><code class="html">
+&lt;div class="modal"&gt;
+    &lt;button class="btn-close"&gt;
+        &lt;span class="material-icons"&gt; close &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;p class="modal-body"&gt;Are you sure you want to remove this item?&lt;/p&gt;
+    &lt;div class="modal-actionbuttons"&gt;
+        &lt;button class="btn bg-danger color-white"&gt;
+            Delete
+            &lt;span class="material-icons"&gt; delete &lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="btn bg-success color-white"&gt;
+            Move to wishlist
+            &lt;span class="material-icons"&gt; shopping_bag &lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+				<div class="page-navigation-wrapper">
+					<div class="page-navigation-left">
+						<span> ‹ </span
+						><a href="../navigation/navigation.html">Navigation</a>
+					</div>
+					<div class="page-navigation-right">
+						<a href="../slider/slider.html">Slider</a><span> › </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

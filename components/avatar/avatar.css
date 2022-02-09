@@ -34,7 +34,8 @@
 
 .avatar-default-sm {
 	width: max(3rem, 36px);
-	height: 3rem;
+	height: auto;
+	aspect-ratio: 1;
 	font-size: 1rem;
 	display: flex;
 	align-items: center;

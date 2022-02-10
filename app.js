@@ -1,6 +1,5 @@
 const drawer = document.querySelector(".drawer")
 const toggleButtonDrawers = document.querySelector(".components-menu-hamburger");
-var flag = 0;
 
 toggleButtonDrawers.addEventListener('click', () => {
     const visibility = drawer.getAttribute('data-visible');

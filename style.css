@@ -89,6 +89,7 @@ a.active-navbar {
 	z-index: 5;
 	box-shadow: 5px 0 10px -2px var(--grey);
 	margin-top: 4rem;
+	transition: transform 2s;
 }
 
 .drawernew > :last-child {
@@ -192,6 +193,7 @@ a.active-navbar {
 	}
 	.drawernew[data-visible="true"] {
 		transform: translateX(0%);
+		transition: transform 2s;
 	}
 	.documentation-page {
 		display: grid;

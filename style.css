@@ -7,6 +7,10 @@ body {
 	max-width: 100%;
 }
 
+html {
+	font-size: 75%; /* font size is 12px */
+}
+
 code {
 	font-size: 1rem;
 }
@@ -102,11 +106,6 @@ a.active-navbar {
 	box-shadow: none;
 }
 
-/* a.drawer-link {
-	display: inline-block;
-	width: 90%;
-} */
-
 .drawer-link.active {
 	font-weight: 600;
 	color: var(--tealgreen);
@@ -168,11 +167,6 @@ a.active-navbar {
 	margin: 1rem;
 }
 
-/* .code-example {
-	overflow: auto;
-	width: 100%;
-} */
-
 .flexwrap {
 	flex-wrap: wrap;
 }
@@ -180,14 +174,18 @@ a.active-navbar {
 @media only screen and (min-width: 500px) {
 	.landing-page-img > img {
 		width: max(500px, 40rem);
-		margin-top: 5rem;
+		margin-top: 8rem;
 	}
 }
 
 @media only screen and (min-width: 850px) {
+	html {
+		font-size: 100%; /* font size is 16px */
+	}
 	.landing-page {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		margin-top: 5rem;
 	}
 	.components-menu-hamburger {
 		visibility: hidden;

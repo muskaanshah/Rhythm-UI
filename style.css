@@ -90,6 +90,7 @@ a.active-navbar {
 	box-shadow: 5px 0 10px -2px var(--grey);
 	margin-top: 4rem;
 	transition: transform 2s;
+	width: 250px;
 }
 
 .drawernew > :last-child {
@@ -172,6 +173,10 @@ a.active-navbar {
 	width: 100%;
 } */
 
+.flexwrap {
+	flex-wrap: wrap;
+}
+
 @media only screen and (min-width: 500px) {
 	.landing-page-img > img {
 		width: max(500px, 40rem);
@@ -190,6 +195,7 @@ a.active-navbar {
 	.drawernew {
 		overflow: auto;
 		box-shadow: none;
+		width: 300px;
 	}
 	.drawernew[data-visible="true"] {
 		transform: translateX(0%);

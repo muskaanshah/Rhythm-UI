@@ -25,6 +25,10 @@
 	background-color: rgb(161, 191, 201);
 }
 
+.btn:hover {
+	filter: brightness(96%);
+}
+
 .btn.bg-accent:hover,
 .btn.bg-success:hover,
 .btn.bg-danger:hover {

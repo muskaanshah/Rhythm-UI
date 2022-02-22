@@ -66,7 +66,7 @@ Rhythm UI uses a variety of colours
 ## Sneak peak of the documentation site
 ![image](https://user-images.githubusercontent.com/67731665/155031858-183885ad-2220-4208-baae-3bd8642ed10d.png)
 ![image](https://user-images.githubusercontent.com/67731665/155031980-6a1e94fd-36e3-4f4b-b8ce-952c2fb1a5f1.png)
-![image](https://user-images.githubuserco- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`ntent.com/67731665/155032061-8c786331-ed09-41a4-9d30-438d8bf23c5e.png)
+![image](https://user-images.githubusercontent.com/67731665/155032061-8c786331-ed09-41a4-9d30-438d8bf23c5e.png)
 ![image](https://user-images.githubusercontent.com/67731665/155032171-be4802fb-0b11-41b4-ac05-42323d3428de.png)
 ![image](https://user-images.githubusercontent.com/67731665/155032148-3d2c2639-2d80-4e28-a8ce-33f6fba1ee78.png)
 ![image](https://user-images.githubusercontent.com/67731665/155032125-0a5f9dfd-126e-4663-a275-e51725792559.png)

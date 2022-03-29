@@ -89,6 +89,18 @@ html {
 	letter-spacing: 2px;
 }
 
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
 @media only screen and (min-width: 800px) {
 	html {
 		font-size: 75%; /* here it gets changed to 12px */

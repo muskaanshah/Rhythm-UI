@@ -516,6 +516,14 @@ html {
 	height: auto;
 }
 
+.width-100 {
+	width: 100%;
+}
+
+.width-50 {
+	width: 50%;
+}
+
 @media only screen and (min-width: 800px) {
 	html {
 		font-size: 75%; /* here it gets changed to 12px */

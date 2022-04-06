@@ -1,4 +1,7 @@
 # Rhythm-UI
+
+New Link of the added features - https://uirhythmpart2.netlify.app/index.html
+
 #### A free, modular, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.
 
 - Frequently used components included in the library

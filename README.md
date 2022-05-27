@@ -1,4 +1,7 @@
 # Rhythm-UI
+
+New Link of the added features - https://uirhythmpart2.netlify.app/index.html
+
 #### A free, modular, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.
 
 - Frequently used components included in the library
@@ -28,6 +31,7 @@ Rhythm UI provides the below components; add the classes as mentioned in the doc
 - [Drawer](https://ui-rhythm.netlify.app/components/drawer/drawer.html)
 - [Image](https://ui-rhythm.netlify.app/components/images/images.html)
 - [Input](https://ui-rhythm.netlify.app/components/input/input.html)
+- [Grid](https://uirhythmpart2.netlify.app/components/grid/grid.html)
 - [List](https://ui-rhythm.netlify.app/components/list/lists.html)
 - [Navigation](https://ui-rhythm.netlify.app/components/navigation/navigation.html)
 - [Modal](https://ui-rhythm.netlify.app/components/modal/modal.html)
@@ -37,8 +41,6 @@ Rhythm UI provides the below components; add the classes as mentioned in the doc
 - [Text Utilities](https://ui-rhythm.netlify.app/components/typography/typography.html)
 - [Other Utilities](https://ui-rhythm.netlify.app/components/utilities/utilities.html)
 - [Colour Utilities](https://ui-rhythm.netlify.app/components/colours/colors.html)
-
-We are working to add more components :)
 
 ## Colors
 Rhythm UI uses a variety of colours

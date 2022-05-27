@@ -14,7 +14,7 @@
 		/>
 		<link rel="stylesheet" href="../../style.css" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-		<title>Rhythm UI | Slider</title>
+		<title>Rhythm UI | Grid</title>
 	</head>
 
 	<body>
@@ -38,7 +38,7 @@
 				<p class="drawer-label fw-500">Components</p>
 				<div class="divider-black mb-0-5"></div>
 				<a href="../alert/alert.html" class="drawer-link">Alert</a>
-				<a href="../avatar/avatar.html" class="drawer-link">Avatar</a>
+				<a href="../avatar/avatar.html" class="drawer-link active">Avatar</a>
 				<a href="../badge/badge.html" class="drawer-link">Badge</a>
 				<a href="../button/button.html" class="drawer-link">Button</a>
 				<a href="../card/cards.html" class="drawer-link">Card</a>
@@ -51,7 +51,7 @@
 					>Navigation</a
 				>
 				<a href="../modal/modal.html" class="drawer-link">Modal</a>
-				<a href="../slider/slider.html" class="drawer-link active">Slider</a>
+				<a href="../slider/slider.html" class="drawer-link">Slider</a>
 				<a href="../rating/rating.html" class="drawer-link">Rating</a>
 				<a href="../toast/toast.html" class="drawer-link">Toast</a>
 			</div>
@@ -63,53 +63,83 @@
 				>
 					<span class="material-icons-round fs-2"> menu </span>
 				</button>
-				<h2>Slider</h2>
-				<p>
-					Range sliders are used on web pages to allow the user to specify a
-					numeric value that should not be less than a certain value and not
-					greater than another given value. That is, it allows you to choose a
-					value from a range represented as a slider.
+				<h2>Grid</h2>
+				<p class="blocktext">
+					Grid is a versatile layout to make different sections on a webpage. It
+					is used when the user wants to display the data in a two dimensional
+					format.
 				</p>
+				<h3>Two column grid</h3>
 				<div class="blocktext">
 					<p>
-						<code class="code-highlight">slider-container</code> - Has to be
-						given to the wrapper div containing the slider
-					</p>
-					<p>
-						<code class="code-highlight">slider</code> - To be given to the
-						slider
+						<code class="code-highlight">grid-2</code> - The main class; has to
+						be given to the wrapper div
 					</p>
 				</div>
-				<div class="blocktext" style="max-width: 40%">
-					<div class="slider-container">
-						<input
-							type="range"
-							class="slider"
-							min="1"
-							max="100"
-							value="1"
-							id="priceRange"
-						/>
+				<div class="blocktext">
+					<p>Example 1</p>
+					<div class="grid-2">
+						<div class="bg-warning-light p-1 text-center">Item 1</div>
+						<div class="bg-success-light p-1 text-center">Item 2</div>
+					</div>
+					<p>Example 2</p>
+					<div class="grid-2">
+						<div class="bg-tealgreen-light p-1 text-center">Item 1</div>
+						<div class="bg-warning-light p-1 text-center">Item 2</div>
+						<div class="bg-danger-light p-1 text-center">Item 3</div>
+						<div class="bg-grey-light p-1 text-center">Item 4</div>
+						<div class="bg-success-light p-1 text-center">Item 5</div>
 					</div>
 				</div>
+
 				<pre class="code-example"><code class="html">
-&lt;div class="slider-container"&gt;
-    &lt;input
-        type="range"
-        class="slider"
-        min="1"
-        max="100"
-        value="1"
-        id="priceRange"
-    /&gt;
+&lt;div class="grid-2"&gt;
+    &lt;div class="bg-warning-light p-1 text-center"&gt;Item 1&lt;/div&gt;
+    &lt;div class="bg-success-light p-1 text-center"&gt;Item 2&lt;/div&gt;
+    ...more child classes
+    /* The child classes are additional and not mandatory (just for styling) */
 &lt;/div&gt;
                 </code></pre>
+				<h3>Three column grid</h3>
+				<div class="blocktext">
+					<p>
+						<code class="code-highlight">grid-3</code> - The main class; has to
+						be given to the wrapper div
+					</p>
+				</div>
+				<div class="blocktext">
+					<p>Example 1</p>
+					<div class="grid-3">
+						<div class="bg-warning-light p-1 text-center">Item 1</div>
+						<div class="bg-success-light p-1 text-center">Item 2</div>
+						<div class="bg-grey-light p-1 text-center">Item 3</div>
+					</div>
+					<p>Example 2</p>
+					<div class="grid-3">
+						<div class="bg-tealgreen-light p-1 text-center">Item 1</div>
+						<div class="bg-warning-light p-1 text-center">Item 2</div>
+						<div class="bg-danger-light p-1 text-center">Item 3</div>
+						<div class="bg-grey-light p-1 text-center">Item 4</div>
+						<div class="bg-success-light p-1 text-center">Item 5</div>
+					</div>
+				</div>
+
+				<pre class="code-example"><code class="html">
+&lt;div class="grid-3"&gt;
+    &lt;div class="bg-tealgreen-light p-1 text-center"&gt;Item 1&lt;/div&gt;
+    &lt;div class="bg-warning-light p-1 text-center"&gt;Item 2&lt;/div&gt;
+    &lt;div class="bg-danger-light p-1 text-center"&gt;Item 3&lt;/div&gt;
+    ...more child classes
+    /* The child classes are additional and not mandatory (just for styling) */
+&lt;/div&gt;
+                </code></pre>
+
 				<div class="page-navigation-wrapper">
 					<div class="page-navigation-left">
-						<span> ‹ </span><a href="../modal/modal.html">Modal</a>
+						<span> ‹ </span><a href="../drawer/drawer.html">Drawer</a>
 					</div>
 					<div class="page-navigation-right">
-						<a href="../rating/rating.html">Rating</a><span> › </span>
+						<a href="../images/images.html">Image</a><span> › </span>
 					</div>
 				</div>
 			</div>

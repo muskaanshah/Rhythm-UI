@@ -1,5 +1,5 @@
 html {
-	font-size: 62.5%;
+	font-size: 87.5%;
 }
 
 .divider-black {
@@ -524,10 +524,8 @@ html {
 	width: 50%;
 }
 
-@media only screen and (min-width: 800px) {
-	html {
-		font-size: 75%; /* here it gets changed to 12px */
-	}
+.cursor-pointer {
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {

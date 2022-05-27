@@ -101,12 +101,6 @@ html {
 	text-align: right;
 }
 
-@media only screen and (min-width: 800px) {
-	html {
-		font-size: 75%; /* here it gets changed to 12px */
-	}
-}
-
 @media only screen and (min-width: 1000px) {
 	html {
 		font-size: 100%; /* here it gets changed to 16px */
